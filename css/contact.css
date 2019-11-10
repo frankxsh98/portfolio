@@ -1,0 +1,660 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: rgb(250, 250, 250);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    /*Your code here - position relative to the parent */
+    
+    top: -40px;
+    /*Your code here - place 40px higher */
+    ;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 2;
+  
+  }
+  /*Your code here*/
+  /*Add the selector and rule to move the skip link in focus to the exact top.*/
+  .skip a:focus {
+    top: 0;
+  }
+  :focus {
+    /* Add the selector and code to put a 2px black border around all elements in focus.* */
+    /* border: 2px solid black; */
+    outline: none;
+  }
+  li a:focus,li a:hover{
+    background-color: black;
+    color:whitesmoke;
+    /* border:solid 2px black; */
+  }
+  
+  
+  header{
+    position: relative;
+    /* margin:0 auto; */
+    height: 50px;
+    background-color: black;
+  }
+  
+  nav ul{
+    position:absolute;
+    right: 0;
+    top:50px;
+    border-bottom:solid 2px white;
+    
+  }
+  
+  nav ul li a{
+    box-sizing: border-box;
+    color:white;
+    background-color:rgba(140, 169, 177, 0.603);
+    display:inline-block;
+    font-size:15px;
+    width:80px;
+    height:30px;
+    text-decoration: none;
+    border-top:solid 2px white;
+    border-left:solid 2px white;
+    border-right:solid 2px white;
+  }
+  
+  
+  h1 {
+    color:white;
+    top:50%;
+    font-size: 30px;
+    line-height: 50px;
+    margin:auto 0;
+    text-align: center;
+    /* Shenhao's Portfolio */
+  }
+  
+  
+  .home-image{
+    position: relative;
+    height:100vh;
+    background-color: black;
+    background-image: url("../images/plastic.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .home-image p{
+    background-color: rgba(140, 169, 177, 0.603);
+    position:absolute;
+    text-align: center;
+    letter-spacing: 0;
+    font-weight: 200;
+    line-height: 1; 
+    padding: 0;
+    top:30vh;
+   width:50%;
+    left: 49%;
+    margin-left: -25%;
+    border:solid 0.05em rgba(255, 255, 255, 0.719);
+    
+    font-size:8vw;
+    color:rgba(255, 255, 255, 0.863);
+
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px rgba(140, 169, 177, 0.603),
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  /* mouseicon */
+  a.mouse-scroll{
+  text-align: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -17px;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #FFF;
+  letter-spacing: 2px;
+  margin-top: 10%;
+  text-decoration: none;
+  overflow: hidden;
+  display: inline-block;
+  }
+  
+  .mouse-scroll .mouse{ 
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #FFF;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 48px;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
+    border: 2px solid rgba(255,255,255,.64);
+    border-radius: 18px;
+  }
+  .mouse-scroll .text{
+    font-size:0;
+  }
+  
+  .mouse-scroll .mouse .mouse-movement{
+    text-align: center;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #399670;
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 5px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+    background: #FFF;
+    border-radius: 50%;
+    animation: scroll-verticle 2s linear infinite;
+  }
+  
+  @keyframes scroll-verticle{
+    0%{
+      opacity: 1;
+      top: 25%;
+    }
+    25%{
+      opacity:1;
+      top:50%;
+    }
+    100%{
+      opacity:0;
+      top:50%;
+    }
+  }
+  
+  
+  
+  footer{
+   height:30px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    display: block;
+    position:relative;
+    background-color: black;
+    min-height: 60px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  footer p{
+    font-size: 20px;
+    color:white;
+    line-height:60px;
+    vertical-align: middle;
+  }
+
+
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+    padding-left:2%;
+}
+
+form {
+  width:90%;
+  margin:20px auto;
+  background-color: white;
+  border: solid 4px rgb(171, 171, 172);
+  border-radius: 10px;
+}
+
+form legend{
+  width:60%;
+  margin:5px auto;
+  text-align: center;
+}
+
+form legend h1{
+  color:black;
+}
+
+form label{
+  display:inline-block;
+  width:40%;
+  line-height: 30px;
+  font-size: 20px;
+  width:95%;
+  margin-left:5px;
+
+  /* border: solid 5px black; */
+}
+
+form div{
+    display:inline-block;
+    width: 100%;
+
+}
+
+form input{
+  display:block;
+  border: solid 2px rgb(196, 196, 196);
+  border-radius: 4px;
+  width:95%;
+  margin:0 5px;
+  height:35px;
+  line-height: 30px;
+  resize: vertical;
+}
+
+form input:focus{
+  border: solid 2px rgb(122, 138, 233);
+}
+
+form textarea{
+  width:95%;
+  margin:0 5px;
+  height:150px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+
+  resize: none;
+}
+form textarea:focus{
+  border: solid 2px rgb(40, 56, 143);
+}
+
+button.btn{        
+  color: black;     /*Why couldn't I just use button?*/
+    display: block;
+    margin: 10px auto;
+    font-size: 20px;
+    height:30px;
+  background-color: #36A0FF;
+border:solid 2px #36A0FF;
+border-radius: 2px;
+}
+
+button.btn:focus, button.btn:hover{
+  border-color: rgb(40, 56, 143);
+} 
+
+.map{
+  width:80%;
+  margin:0 auto;
+  border:solid 2px #36A0FF;
+border-radius: 2px;
+overflow: hidden;
+}
+
+.map iframe{
+  width:100%;
+  height:300px;
+}
+
+  @media screen and (min-width: 500px) and (max-width:970px)
+{
+nav ul{
+  position:absolute;
+  top:40px;
+  line-height: 50px;
+  border:none;
+  
+  margin:0 auto;
+}
+
+nav ul li{
+  display:inline-block;
+  box-sizing: border-box;
+  color: white;
+  letter-spacing: 0;
+  border:none;
+  margin:none;
+}
+
+nav ul li a{
+  background-color:black;
+  color:white;
+  display:inline-block;
+  padding:auto 0;
+  text-decoration: none;
+  text-align: center;
+  /* border: none; */
+  margin:none;
+  width:18vw;
+  line-height: 30px;
+  height: 30px;
+  border:solid 2px white;
+}
+
+nav ul li a:focus, nav ul li a:hover{
+  background-color: rgba(214, 214, 214, 0.877);
+  color:black;
+  border-color: black;
+  text-decoration: underline;
+}
+
+ nav ul li a.current{
+  background-color: rgb(255, 255, 255);
+  color:black;
+  border-color: black;
+  font-weight: bold;
+}
+
+h1 {
+  color:white;
+  top:50%;
+  font-size: 30px;
+  line-height: 50px;
+  margin:none; 
+  text-align: center;
+  /* Shenhao's Portfolio */
+}
+
+
+form {
+  display:inline-block;
+  width:40%;
+  margin:10px 10px;
+  background-color: white;
+  border: solid 4px rgb(171, 171, 172);
+  border-radius: 10px;
+}
+
+.map{
+  display:inline-block;
+  width:50%;
+  margin:0 auto;
+  border:solid 2px #36A0FF;
+border-radius: 2px;
+overflow: hidden;
+}
+
+.map iframe{
+  width:100%;
+  height:400px;
+}
+
+}
+  
+  @media screen and (min-width: 970px)
+  {
+    nav ul{
+      position:absolute;
+      top:0;
+      right: 0;
+      line-height: 50px;
+      border:none;
+      width:auto ;
+    }
+    
+    nav ul li{
+      display:inline-block;
+      color: white;
+      letter-spacing: 0;
+      height: 10px;
+      margin-right:2em;
+      border:none;
+    }
+    
+    nav ul li a{
+      width:90px;
+      height:50px;
+      background-color:rgba(156, 152, 88, 0);
+      color:white;
+      display:inline-block;
+      padding:auto 0;
+      text-decoration: none;
+      text-align: center;
+      border: none;
+    }
+    
+    h1 {
+      color:white;
+      top:50%;
+      font-size: 30px;
+      line-height: 50px;
+      margin:none; 
+      text-align: left;
+      /* Shenhao's Portfolio */
+    }
+    nav ul li a:focus, nav ul li a:hover{
+      background-color: rgb(218, 218, 218);
+      color:black;
+      border-color: yellow;
+      text-decoration: underline;
+    }
+  
+     nav ul li a.current{
+      background-color: rgb(255, 255, 255);
+      color:black;
+      border-color: black;
+      font-weight: bold;
+    }
+  
+    form {
+      display:inline-block;
+      width:40%;
+      margin:10px 10px;
+      background-color: white;
+      border: solid 4px rgb(171, 171, 172);
+      border-radius: 10px;
+    }
+
+    
+form legend{
+  width:60%;
+  margin:5px auto;
+  text-align: center;
+}
+
+form legend{
+  color:black;
+}
+
+form label{
+  display:inline-block;
+  width:40%;
+  line-height: 30px;
+  font-size: 20px;
+  margin-left:5px;
+
+  /* border: solid 5px black; */
+}
+
+
+
+form div{
+    display:inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input{
+
+  display:inline-block;
+  border: solid 2px rgb(196, 196, 196);
+  border-radius: 4px;
+  width:50%;
+  margin:0 5px;
+  height:35px;
+  line-height: 30px;
+}
+
+
+
+form textarea{
+  display:inline-block;
+  width:50%;
+  padding:none;
+  margin:0 5px;
+}
+
+
+    
+    .map{
+      display:inline-block;
+      width:55%;
+      margin:0 auto;
+      border:solid 2px #36A0FF;
+    border-radius: 2px;
+    overflow: hidden;
+    }
+    
+    .map iframe{
+      width:100%;
+      height:400px;
+    }
+  }
+  @media all and (device-width: 414px) and (device-height: 736px) and (orientation:portrait){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 736px;
+    }
+  }
+  
+  @media all and (device-width: 414px) and (device-height: 736px) and (orientation:landscape){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 414px;
+    }
+  }
+  
+  @media all and (device-width: 375px) and (device-height: 812px) and (orientation:portrait){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 812px;
+    }
+  }
+  
+  @media all and (device-width: 375px) and (device-height: 812px) and (orientation:landscape){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 375px;
+    }
+  }
+  
+  @media all and (device-width: 375px) and (device-height: 667px) and (orientation:portrait){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 667px;
+    }
+  }
+  
+  @media all and (device-width: 375px) and (device-height: 667px) and (orientation:landscape){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 375px;
+    }
+  }
+  
+  @media all and (device-width: 320px) and (device-height: 568px) and (orientation:portrait){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 568px;
+    }
+  }
+  
+  @media all and (device-width: 320px) and (device-height: 568px) and (orientation:landscape){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 320px;
+    }
+  }
+  
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 1024px;
+    }
+  }
+  
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 768px;
+    }
+  }
+  
+  @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 1366px;
+    }
+  }
+  
+  @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:landscape){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 1024px;
+    }
+  }
+  
+  
+  @media all and (device-width: 834px) and (device-height: 1112px) and (orientation:portrait){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 1112px;
+    }
+  }
+  
+  @media all and (device-width: 1112px) and (device-height:834px) and (orientation:landscape){
+    .home-image{ 
+      background-attachment:scroll;
+      height: 834px;
+    }
+  }
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+      transition:none;
+      /* Removes scroll animation */
+    }
+  
+    .skip a {
+      background: white;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      animation:none;
+      z-index: 1;
+      transition:none;
+    }
+  
+    .skip a:focus {
+      top: 0;
+    }
+    a.mouse-scroll{
+      display:none;
+    }
+  }
+  
+  
+  
+  
